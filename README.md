@@ -1,46 +1,106 @@
-# Getting Started with Create React App
+# Projeto React Inicial - Stack Moderna
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto React inicial configurado com uma stack moderna de desenvolvimento web, pronto para começar a desenvolver.
 
-## Available Scripts
+## 🚀 Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React 18.2.0** - Framework principal
+- **TypeScript** - Para tipagem estática
+- **Tailwind CSS** - Framework CSS utilitário
+- **Supabase** - Backend as a Service (BaaS)
+- **Testing Library** - Para testes
+- **Vercel** - Para deploy
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── components/     # Componentes reutilizáveis
+├── pages/         # Páginas da aplicação
+├── hooks/         # Custom hooks
+├── utils/         # Funções utilitárias
+├── types/         # Definições de tipos TypeScript
+├── lib/           # Configurações de bibliotecas
+│   └── supabase.ts
+├── App.tsx        # Componente principal
+├── App.css        # Estilos do App
+├── index.tsx      # Ponto de entrada
+├── index.css      # Estilos globais
+└── reportWebVitals.ts
+```
+
+## 🛠️ Scripts Disponíveis
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Executa o app em modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o test runner em modo interativo.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Constrói o app para produção na pasta `build`.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Nota: operação irreversível!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Remove o Create React App e copia todas as configurações para o projeto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🔧 Configuração
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Variáveis de Ambiente
 
-## Learn More
+Crie um arquivo `.env.local` na raiz do projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```env
+REACT_APP_SUPABASE_URL=sua_url_do_supabase
+REACT_APP_SUPABASE_ANON_KEY=sua_chave_anonima_do_supabase
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Supabase
+
+1. Crie um projeto no [Supabase](https://supabase.com)
+2. Execute o SQL do arquivo `supabase-setup.sql` no SQL Editor
+3. Configure as variáveis de ambiente
+
+## 🎨 Tailwind CSS
+
+O projeto está configurado com Tailwind CSS. Use as classes utilitárias diretamente nos componentes:
+
+```tsx
+<div className="bg-blue-500 text-white p-4 rounded-lg">
+  Hello Tailwind!
+</div>
+```
+
+## 🧪 Testes
+
+O projeto inclui Testing Library configurado. Execute os testes com:
+
+```bash
+npm test
+```
+
+## 🚀 Deploy
+
+O projeto está configurado para deploy no Vercel. Basta conectar o repositório e fazer deploy automático.
+
+## 📚 Próximos Passos
+
+1. Configure as variáveis de ambiente do Supabase
+2. Execute o SQL de setup no Supabase
+3. Comece a desenvolver suas funcionalidades
+4. Adicione novos componentes na pasta `components/`
+5. Crie páginas na pasta `pages/`
+
+## 🤝 Contribuição
+
+Este é um projeto inicial. Sinta-se livre para modificar e adaptar conforme suas necessidades.
+
+---
+
+**Happy coding! 🎉**
